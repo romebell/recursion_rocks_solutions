@@ -8,6 +8,10 @@
 # ...
 # pretty_print(inner_dictionary, indent + '..');
 # ...
+o1 = {"a": 1, "b": 2}
+o2 = {"a": 1, "b": 2, "c": {"name": "Bruce Wayne", "occupation": "Hero"}, "d": 4}
+o3 = {"a": 1, "b": 2, "c": {"name": "Bruce Wayne", "occupation": "Hero", "friends": {"spiderman": {"name": "Peter Parker"}, "superman": {"name": "Clark Kent"}}}, "d": 4}
+
 def pretty_print(dictionary, indent):
   for key in dictionary:
     value = dictionary[key]
@@ -16,12 +20,9 @@ def pretty_print(dictionary, indent):
       pretty_print(value, indent + indent)
     else:
       print(f'{indent}{key}: {value},')
+      
 pretty_print(o3, "  ")
 pretty_print(o2, '    ')
-
-o1 = {"a": 1, "b": 2}
-o2 = {"a": 1, "b": 2, "c": {"name": "Bruce Wayne", "occupation": "Hero"}, "d": 4}
-o3 = {"a": 1, "b": 2, "c": {"name": "Bruce Wayne", "occupation": "Hero", "friends": {"spiderman": {"name": "Peter Parker"}, "superman": {"name": "Clark Kent"}}}, "d": 4}
 
 # print(pretty_print(o1, "-"))
 # print(pretty_print(o2, " "))
