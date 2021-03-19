@@ -13,8 +13,8 @@ def fib(n):
   else:
     return fib(n - 1) + fib(n - 2)
 
-print(f"fibonacci of 9: {fib(9)} ")
-print(f"fibonacci of 13: {fib(13)} ")
+# print(f"fibonacci of 9: {fib(9)} ")
+# print(f"fibonacci of 13: {fib(13)} ")
 
 # print(fib(-1))
 # => 0
@@ -24,7 +24,7 @@ print(f"fibonacci of 13: {fib(13)} ")
 # => 1
 # print(fib(2))
 # => 1
-print(fib(7))
+print(fib(20))
 # => 13
 
 

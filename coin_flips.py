@@ -12,10 +12,4 @@ def coin_flips(n):
   if n == 1:
     return ['H', 'T']
   combos = coin_flips(n - 1)
-  print(n)
   return [x + 'H' for x in combos] + [x + 'T' for x in combos]
-print(coin_flips(4))
-print(coin_flips(1))
-
-# print(coinFlips(2)) 
-# => ["HH", "HT", "TH", "TT"]
