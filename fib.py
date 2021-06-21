@@ -6,7 +6,7 @@
 # For this function, the first two fibonacci numbers are 0 and 1
 
 def fib(n):
-  if n < 0:
+  if n <= 0:
     return 0
   if n == 1 or n == 2:
     return 1

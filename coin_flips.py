@@ -13,3 +13,11 @@ def coin_flips(n):
     return ['H', 'T']
   combos = coin_flips(n - 1)
   return [x + 'H' for x in combos] + [x + 'T' for x in combos]
+
+  # within this array, iterate through each element,
+  # for x, we want to add 'H' and storing within this array
+
+
+# names = ['Janeth', 'Danny', 'Shawn']
+
+# add_x = [person + 'x' for person in names]
